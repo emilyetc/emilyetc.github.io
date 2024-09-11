@@ -1,0 +1,144 @@
+.navbar {
+  background-color: #494D5F;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: #E5EAF5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #E5EAF5;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #8458B3;
+  color: white;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #D0BDF4;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.typed-out{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 2.5s forwards;
+}
+
+.container {
+  display: flex;
+  padding-left: 3%;
+}
+
+.left{
+  padding-left: 3%;
+}
+
+.stat{
+  width: 33%;
+  position: relative;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.profile {
+  height:auto;
+  width:auto;
+  max-width:300px;
+  max-height:300px;
+}
+
+#picture {
+  background-image: url('../imgs/pfp.jpg');
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%; /*Makes the div circular*/
+  max-width: 300px;
+  max-height: 300px;
+  clip-path: circle(75x at 50% 50%);
+}
+
+#picture:hover {
+  background-image: url('../imgs/coder.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%; /* Keeps the hover image circular */
+}
+
+.gympic {
+  background-size: cover;
+  background-position: center;
+  clip-path: circle();
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.info{
+  margin-top: auto;
+  margin-left: 10%;
+}
